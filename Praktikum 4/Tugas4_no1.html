@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js">
+        //untuk menghubungkan dg jquery</script>
+        <script type="text/javascript">
+            //fungsi memanggil document yang ready yaitu jquery
+            $(document).ready(function(){
+                $(".hide").click(function(){$("#foto").hide("slow")});
+                //Output : menyembunyikan foto 1
+                $(".show").click(function(){$("#foto").show("slow")});
+                //Output : menampilkan foto 1
+                $(".hide2").click(function(){$("#foto2").hide("slow")});
+                //Output : menyembunyikan foto 2
+                $(".show2").click(function(){$("#foto2").show("slow")});
+                //Output : menampilkan foto 2
+            });
+        </script>
+    </head>
+    <body>
+        <button class="hide"> Sembunyikan </button>
+        <button class="show"> Tampilkan </button>
+        <p> <img id="foto" src="kurama.jpg"> </p>
+
+        <button class="hide2"> Sembunyikan </button>
+        <button class="show2"> Tampilkan </button>
+        <p> <img id="foto2" src="lionCub.png"> </p>
+    </body>
+</html>

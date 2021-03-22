@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script src="jquery-3.6.0.min.js"> // untuk menghubungkan dengan jquery</script>
+        <script type="text/javascript">
+            //fungsi memanggil document yang ready yaitu jquery
+            $(document).ready(function(){
+                $(".sembunyi").click(function() {$("#foto").hide("slow")});
+                //fungsi menyembunyikan gambar dengan id foto
+                $(".tampil").click(function() {$("#foto").show("slow")});
+                //fungsi menampilkan gambar dengan id foto
+            });
+        </script>
+    </head>
+    <body>
+        <button class="sembunyi"> Sembunyikan </button>
+        <button class="tampil"> Tampilkan </button>
+        <p> <img id="foto" src="logoupnbaru.png" width="500px"> </p>
+    </body>
+</html>

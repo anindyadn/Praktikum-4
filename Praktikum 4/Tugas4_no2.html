@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-3.6.0.min.js">
+        //untuk menghubungkan dg jquery</script>
+        <script type="text/javascript">
+            //fungsi memanggil document yang ready yaitu jquery
+            $(document).ready(function(){
+                $(".a").ready(function(){$("#box1").addClass("kuning")});
+                //Output : menampilkan kotak berwarna kuning dengan class a
+                $(".a").dblclick(function(){$("#box1").addClass("merah")});
+                //Output : berubah warna merah ketika kotak di klik 2x
+                $(".b").ready(function(){$("#box2").addClass("kuning")});
+                //Output : menampilkan kotak berwarna kuning dengan class b
+                $(".b").dblclick(function(){$("#box2").addClass("merah")});
+                //Output : berubah warna merah ketika kotak di klik 2x
+                $(".c").ready(function(){$("#box3").addClass("kuning")});
+                //Output : menampilkan kotak berwarna kuning dengan class c
+                $(".c").dblclick(function(){$("#box3").addClass("merah")});
+                //Output : berubah warna merah ketika kotak di klik 2x
+                $(".d").ready(function(){$("#box4").addClass("kuning")});
+                //Output : menampilkan kotak berwarna kuning dengan class d
+                $(".d").dblclick(function(){$("#box4").addClass("merah")});
+                //Output : berubah warna merah ketika kotak di klik 2x
+            });
+        </script>
+        <style type="text/css">
+            .kuning{
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+                border: none;
+            }
+            .merah{
+                background-color: red;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <p> Klik 2x pada setiap kotak untuk mengubah warna </p>
+        <table>
+            <tr>
+                <td class="a" id="box1"> </td>
+                <td class="b" id="box2"> </td>
+                <td class="c" id="box3"> </td>
+                <td class="d" id="box4"> </td>
+            </tr>
+        </table>
+    </body>
+</html>
